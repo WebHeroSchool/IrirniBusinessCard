@@ -1,0 +1,335 @@
+.wrapper {
+  background: #3030c1;
+}
+
+.header {
+  margin: auto;
+  width: 82%;
+  background: no-repeat center right url(img/HeaderImg.svg);
+}
+
+.logo {
+  padding-bottom: 107px;
+  background: no-repeat bottom left url(img/LogoImg.svg);
+  margin-bottom: 130px;
+  /* border: dashed 1px red; */
+}
+
+.header__title {
+  padding: 0 58% 0 0;
+  margin: 0 0 32px 0;
+  font: bold 45px/55px 'gilroyextrabold', arial, helvetica, sans-serif;
+  color: #fff;
+}
+
+.header__subtitle {
+  padding: 0 76% 0 0;
+  margin: 0 0 10px 0;
+  font: bold 30px/36px 'gilroyextrabold', arial, helvetica, sans-serif;
+  color: #ffcc33;
+}
+
+.header__text {
+  padding: 0 68% 0 0;
+  margin: 0 0 32px 0;
+  font: 20px/23px 'gilroylight', arial, helvetica, sans-serif;
+  color: #fff;
+}
+
+.header__button {
+  display: inline-block;
+  padding: 15px 23px;
+  text-decoration: none;
+  font: 20px/24px 'montserratblack', arial, helvetica, sans-serif;
+  color:#3030c1;
+  background: #ffcc33;
+  margin: 0 0 241px 0;
+  /* border: dashed 1px red; */
+}
+
+.main {
+  margin: auto;
+  width: 82%;
+  }
+
+.plan__title, .middle__title {
+  text-align: center;
+  margin: 55px 0 30px 0;
+  font: bold 40px/49px 'gilroyextrabold', arial, helvetica, sans-serif;
+}
+
+.myplans {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 55px;
+  /* border: dashed 1px red; */
+}
+
+.plan__item {
+  position: relative;
+  margin-right: 20px;
+  box-shadow: 7px 7px 30px;
+  /* border: dashed 1px red; */
+}
+
+.img1, .img2, .img3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 47px 0 25px 0;
+  /* border: dashed 1px red; */
+}
+
+.plan__title1, .plan__title2, .plan__title3  {
+  text-align: center;
+  margin: auto;
+  font: bold 30px/36px 'gilroyextrabold', arial, helvetica, sans-serif;
+  color: #3030c1;
+  /* border: dashed 1px red; */
+}
+
+.plan__text1, .plan__text2, .plan__text3 {
+  text-align: center;
+  margin: auto;
+  font: bold 20px/24px 'gilroyextrabold', arial, helvetica, sans-serif;
+  color: #3a3a3a;
+  /* border: dashed 1px red; */
+}
+
+.plan__title1 {
+  width: 67%;
+  margin-bottom: 25px;
+}
+
+.plan__title2 {
+  width: 82%;
+  margin-bottom: 12px;
+}
+
+.plan__title3 {
+  width: 64%;
+  margin-bottom: 25px;
+}
+
+.plan__text1 {
+  width: 61%;
+  margin-bottom: 63px;
+}
+
+.plan__text2 {
+  width: 55%;
+  margin-bottom: 52px;
+}
+
+.plan__text3 {
+  width: 66%;
+  margin-bottom: 63px;
+}
+
+.middle__text {
+  text-align: center;
+  margin: auto;
+  width: 70%;
+  font: 30px/35px 'gilroylight', arial, helvetica, sans-serif;
+  margin-bottom: 55px;
+}
+
+.form__wrapper {
+  background: #f0fbff;
+}
+
+.form__title {
+  text-align: center;
+  padding: 73px 0 50px 0;
+  font: bold 40px/49px 'gilroyextrabold', arial, helvetica, sans-serif;
+  /* border: dashed 1px red; */
+}
+
+.form {
+  text-align: center;
+  margin: auto;
+  width: 82%;
+}
+
+.window__name {
+  padding: 28px 200px 28px 28px;
+  background: #fff;
+  margin-bottom: 30px;
+  border: none;
+  font: 20px/23px 'gilroylight', arial, helvetica, sans-serif;
+  color: #878787;
+}
+
+.window__email {
+  padding: 28px 50px 28px 28px;
+  background: #fff;
+  margin-bottom: 74px;
+  border: none;
+  font: 20px/23px 'gilroylight', arial, helvetica, sans-serif;
+  color: #878787;
+}
+
+.form__button {
+  display: inline-block;
+  padding: 28px 110px;
+  background: #ffda45;
+  margin-bottom: 73px;
+  text-decoration: none;
+  border: none;
+  font: 20px/24px 'montserratblack', arial, helvetica, sans-serif;
+  color: #000;
+}
+
+.footer {
+  text-align: center;
+  background: #3030c1;
+  padding: 51px 70% 51px 0;
+  font: 15px/18px 'robotoregular', arial, helvetica, sans-serif;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .header {
+    background: none;
+  }
+
+  .logo {
+    padding-bottom: 63px;
+    background: no-repeat bottom left url(img/LogoMobile.svg);
+    margin-bottom: 25px;
+    /* border: dashed 1px red; */
+  }
+
+  .header__title {
+    padding: 0 5% 0 0;
+    margin: 0 0 25px 0;
+    font: bold 25px/31px 'gilroyextrabold', arial, helvetica, sans-serif;
+  }
+
+  .header__subtitle {
+    padding: 0 5% 0 0;
+    font: bold 20px/25px 'gilroyextrabold', arial, helvetica, sans-serif;
+  }
+
+  .header__text {
+    padding: 0 5% 0 0;
+    margin: 0 0 25px 0;
+    font: 15px/17px 'gilroylight', arial, helvetica, sans-serif;
+    /* border: dashed 1px red; */
+  }
+
+  .mobile__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    /* border: dashed 1px red; */
+  }
+
+  .header__button {
+    display:none;
+  }
+
+  .main {
+    margin: auto;
+    width: 82%;
+    }
+
+  .plan__title, .middle__title {
+    text-align: center;
+    margin: 0px 0 30px 0;
+    font: bold 20px/25px 'gilroyextrabold', arial, helvetica, sans-serif;
+    /* border: dashed 1px red; */
+  }
+
+  .myplans {
+    display: block;
+    margin: auto;
+    margin-bottom: 55px;
+    /* border: dashed 1px red; */
+  }
+
+  .plan__item {
+    position: relative;
+    margin-right: 20px;
+    box-shadow: 7px 7px 30px;
+    /* border: dashed 1px red; */
+  }
+
+  .img1, .img2, .img3 {
+    margin: 42px 0 15px 0;
+    /* border: dashed 1px red; */
+  }
+
+  .plan__title1, .plan__title2, .plan__title3  {
+    font: bold 20px/25px 'gilroyextrabold', arial, helvetica, sans-serif;
+  }
+
+  .plan__text1, .plan__text2, .plan__text3 {
+    font: bold 10px/12px 'gilroyextrabold', arial, helvetica, sans-serif;
+  }
+
+  .plan__title1 {
+    width: 75%;
+    margin-bottom: 15px;
+  }
+
+  .plan__title2 {
+    width: 95%;
+    margin-bottom: 7px;
+  }
+
+  .plan__title3 {
+    width: 64%;
+    margin-bottom: 25px;
+  }
+
+  .plan__text1 {
+    width: 61%;
+    margin-bottom: 63px;
+  }
+
+  .plan__text2 {
+    width: 55%;
+    margin-bottom: 52px;
+  }
+
+  .plan__text3 {
+    width: 66%;
+    margin-bottom: 63px;
+  }
+
+  .middle__text {
+    width: 90%;
+    font: 18px/21px 'gilroylight', arial, helvetica, sans-serif;
+  }
+
+  .form__title {
+    padding: 44px 0 25px 0;
+    font: bold 20px/25px 'gilroyextrabold', arial, helvetica, sans-serif;
+  }
+
+  .window__name {
+    padding: 17px 169px 16px 17px;
+    margin-bottom: 13px;
+    font: 10px/12px 'gilroylight', arial, helvetica, sans-serif;
+  }
+
+  .window__email {
+    padding: 17px 92px 16px 17px;
+    margin-bottom: 26px;
+    font: 10px/12px 'gilroylight', arial, helvetica, sans-serif;
+  }
+
+  .form__button {
+    padding: 17px 90px;
+    margin-bottom: 44px;
+    font: 10px/12px 'montserratblack', arial, helvetica, sans-serif;
+  }
+
+  .footer {
+    padding: 24px 42% 24px 0;
+    font: 10px/12px 'robotoregular', arial, helvetica, sans-serif;
+  }
+}

@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'gilroylight';
+    src: url('fonts/gilroy-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gilroyextrabold';
+    src: url('fonts/gilroy-extrabold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratblack';
+    src: url('fonts/montserrat-black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/roboto-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
