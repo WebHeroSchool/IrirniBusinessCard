@@ -1,4 +1,9 @@
+body {
+  margin: 0;
+}
+
 .wrapper {
+  margin: auto;
   background: #3030c1;
 }
 
@@ -11,26 +16,26 @@
 .logo {
   padding-bottom: 107px;
   background: no-repeat bottom left url(img/LogoImg.svg);
-  margin-bottom: 130px;
+  margin-bottom: 133px;
   /* border: dashed 1px red; */
 }
 
 .header__title {
-  padding: 0 58% 0 0;
-  margin: 0 0 32px 0;
+  padding: 0 47% 0 0;
+  margin: 0 0 33px 0;
   font: bold 45px/55px 'gilroyextrabold', arial, helvetica, sans-serif;
   color: #fff;
 }
 
 .header__subtitle {
-  padding: 0 76% 0 0;
-  margin: 0 0 10px 0;
+  padding: 0 69% 0 0;
+  margin: 0 0 11px 0;
   font: bold 30px/36px 'gilroyextrabold', arial, helvetica, sans-serif;
   color: #ffcc33;
 }
 
 .header__text {
-  padding: 0 68% 0 0;
+  padding: 0 60% 0 0;
   margin: 0 0 32px 0;
   font: 20px/23px 'gilroylight', arial, helvetica, sans-serif;
   color: #fff;
@@ -47,6 +52,10 @@
   /* border: dashed 1px red; */
 }
 
+.mobile__img {
+  display: none;
+}
+
 .main {
   margin: auto;
   width: 82%;
@@ -54,23 +63,28 @@
 
 .plan__title, .middle__title {
   text-align: center;
-  margin: 55px 0 30px 0;
+  margin: 57px 0 30px 0;
   font: bold 40px/49px 'gilroyextrabold', arial, helvetica, sans-serif;
 }
 
 .myplans {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 55px;
-  /* border: dashed 1px red; */
+  border: dashed 1px red;
 }
 
 .plan__item {
-  position: relative;
-  margin-right: 20px;
+  /* position: relative; */
+  padding-right: 10px;
+  /* margin-right: 20px; */
   box-shadow: 7px 7px 30px;
   /* border: dashed 1px red; */
+}
+
+.plan__item:last-child {
+  margin-right: 0;
 }
 
 .img1, .img2, .img3 {
@@ -83,6 +97,7 @@
 
 .plan__title1, .plan__title2, .plan__title3  {
   text-align: center;
+
   margin: auto;
   font: bold 30px/36px 'gilroyextrabold', arial, helvetica, sans-serif;
   color: #3030c1;
@@ -98,17 +113,17 @@
 }
 
 .plan__title1 {
-  width: 67%;
+  width: 70%;
   margin-bottom: 25px;
 }
 
 .plan__title2 {
-  width: 82%;
-  margin-bottom: 12px;
+  width: 80%;
+  margin-bottom: 14px;
 }
 
 .plan__title3 {
-  width: 64%;
+  width: 70%;
   margin-bottom: 25px;
 }
 
@@ -118,21 +133,23 @@
 }
 
 .plan__text2 {
-  width: 55%;
+  width: 60%;
   margin-bottom: 52px;
 }
 
 .plan__text3 {
-  width: 66%;
+  width: 70%;
   margin-bottom: 63px;
 }
 
 .middle__text {
   text-align: center;
+  padding-left: 12px;
   margin: auto;
-  width: 70%;
+  width: 85%;
   font: 30px/35px 'gilroylight', arial, helvetica, sans-serif;
   margin-bottom: 55px;
+  /* border: dashed 1px red; */
 }
 
 .form__wrapper {
@@ -141,7 +158,7 @@
 
 .form__title {
   text-align: center;
-  padding: 73px 0 50px 0;
+  padding: 71px 0 50px 0;
   font: bold 40px/49px 'gilroyextrabold', arial, helvetica, sans-serif;
   /* border: dashed 1px red; */
 }
@@ -202,18 +219,19 @@
   }
 
   .header__title {
-    padding: 0 5% 0 0;
+    padding: 0 2% 0 0;
     margin: 0 0 25px 0;
     font: bold 25px/31px 'gilroyextrabold', arial, helvetica, sans-serif;
   }
 
   .header__subtitle {
     padding: 0 5% 0 0;
+    margin: 0;
     font: bold 20px/25px 'gilroyextrabold', arial, helvetica, sans-serif;
   }
 
   .header__text {
-    padding: 0 5% 0 0;
+    padding: 0 6% 0 0;
     margin: 0 0 25px 0;
     font: 15px/17px 'gilroylight', arial, helvetica, sans-serif;
     /* border: dashed 1px red; */
@@ -223,7 +241,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     /* border: dashed 1px red; */
   }
 
@@ -238,27 +256,29 @@
 
   .plan__title, .middle__title {
     text-align: center;
-    margin: 0px 0 30px 0;
+    margin: 55px 0 30px 0;
     font: bold 20px/25px 'gilroyextrabold', arial, helvetica, sans-serif;
     /* border: dashed 1px red; */
   }
 
   .myplans {
-    display: block;
-    margin: auto;
-    margin-bottom: 55px;
-    /* border: dashed 1px red; */
+    display: inline-block;
+    align-items: top;
+    border: dashed 1px red;
   }
 
   .plan__item {
-    position: relative;
-    margin-right: 20px;
-    box-shadow: 7px 7px 30px;
+    margin: 0 0 20px 0;
     /* border: dashed 1px red; */
+  }
+
+  .plan__item:last-child {
+    margin-bottom: 0;
   }
 
   .img1, .img2, .img3 {
     margin: 42px 0 15px 0;
+    padding-top: 42px;
     /* border: dashed 1px red; */
   }
 
@@ -281,23 +301,23 @@
   }
 
   .plan__title3 {
-    width: 64%;
+    width: 80%;
     margin-bottom: 25px;
   }
 
   .plan__text1 {
     width: 61%;
-    margin-bottom: 63px;
+    padding-bottom: 42px;
   }
 
   .plan__text2 {
     width: 55%;
-    margin-bottom: 52px;
+    padding-bottom: 40px;
   }
 
   .plan__text3 {
     width: 66%;
-    margin-bottom: 63px;
+    padding-bottom: 42px;
   }
 
   .middle__text {
