@@ -17,7 +17,6 @@ body {
   padding-bottom: 107px;
   background: no-repeat bottom left url(img/LogoImg.svg);
   margin-bottom: 133px;
-  /* border: dashed 1px red; */
 }
 
 .header__title {
@@ -49,7 +48,15 @@ body {
   color:#3030c1;
   background: #ffcc33;
   margin: 0 0 241px 0;
-  /* border: dashed 1px red; */
+  background-image: linear-gradient(to left, transparent, transparent 50%, #fff 50%, #fff);
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all .25s ease-in;
+}
+
+.header__button:hover {
+  background-position: 0 0;
+  color: #3030c1;
 }
 
 .mobile__img {
@@ -72,14 +79,12 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 55px;
-  border: dashed 1px red;
 }
 
 .plan__item {
   padding-right: 10px;
   margin-right: 20px;
   box-shadow: 7px 7px 30px;
-  /* border: dashed 1px red; */
 }
 
 .plan__item:last-child {
@@ -91,7 +96,10 @@ body {
   justify-content: center;
   align-items: center;
   margin: 47px 0 25px 0;
-  /* border: dashed 1px red; */
+}
+
+.mobileimg1, .mobileimg2, .mobileimg3 {
+  display: none;
 }
 
 .plan__title1, .plan__title2, .plan__title3  {
@@ -100,7 +108,6 @@ body {
   margin: auto;
   font: bold 30px/36px 'gilroyextrabold', arial, helvetica, sans-serif;
   color: #3030c1;
-  /* border: dashed 1px red; */
 }
 
 .plan__text1, .plan__text2, .plan__text3 {
@@ -108,7 +115,6 @@ body {
   margin: auto;
   font: bold 20px/24px 'gilroyextrabold', arial, helvetica, sans-serif;
   color: #3a3a3a;
-  /* border: dashed 1px red; */
 }
 
 .plan__title1 {
@@ -148,7 +154,6 @@ body {
   width: 85%;
   font: 30px/35px 'gilroylight', arial, helvetica, sans-serif;
   margin-bottom: 55px;
-  /* border: dashed 1px red; */
 }
 
 .form__wrapper {
@@ -159,7 +164,6 @@ body {
   text-align: center;
   padding: 71px 0 50px 0;
   font: bold 40px/49px 'gilroyextrabold', arial, helvetica, sans-serif;
-  /* border: dashed 1px red; */
 }
 
 .form {
@@ -197,6 +201,11 @@ body {
   color: #000;
 }
 
+.form__button:hover {
+  background-color: #f0e68c;
+}
+
+
 .footer {
   text-align: center;
   background: #3030c1;
@@ -214,7 +223,6 @@ body {
     padding-bottom: 63px;
     background: no-repeat bottom left url(img/LogoMobile.svg);
     margin-bottom: 25px;
-    /* border: dashed 1px red; */
   }
 
   .header__title {
@@ -233,7 +241,6 @@ body {
     padding: 0 6% 0 0;
     margin: 0 0 25px 0;
     font: 15px/17px 'gilroylight', arial, helvetica, sans-serif;
-    /* border: dashed 1px red; */
   }
 
   .mobile__img {
@@ -250,24 +257,21 @@ body {
   .main {
     margin: auto;
     width: 82%;
-    }
+  }
 
-  .plan__title, .middle__title {
+  .plan__title {
     text-align: center;
     margin: 55px 0 30px 0;
     font: bold 20px/25px 'gilroyextrabold', arial, helvetica, sans-serif;
-    /* border: dashed 1px red; */
   }
 
   .myplans {
     display: inline-block;
     align-items: top;
-    border: dashed 1px red;
   }
 
   .plan__item {
-    margin: 0 0 20px 0;
-    /* border: dashed 1px red; */
+    margin: 0;
   }
 
   .plan__item:last-child {
@@ -275,9 +279,15 @@ body {
   }
 
   .img1, .img2, .img3 {
-    margin: 42px 0 15px 0;
+    display: none;
+  }
+
+  .mobileimg1, .mobileimg2, .mobileimg3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 15px 0;
     padding-top: 42px;
-    /* border: dashed 1px red; */
   }
 
   .plan__title1, .plan__title2, .plan__title3  {
@@ -300,31 +310,41 @@ body {
 
   .plan__title3 {
     width: 80%;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
   }
 
   .plan__text1 {
-    width: 61%;
+    width: 50%;
     padding-bottom: 42px;
+    margin-bottom: 20px;
   }
 
   .plan__text2 {
-    width: 55%;
+    width: 50%;
     padding-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   .plan__text3 {
-    width: 66%;
+    width: 50%;
     padding-bottom: 42px;
+    margin-bottom: 0px;
+  }
+
+  .middle__title {
+    text-align: center;
+    margin: 0 0 30px 0;
+    font: bold 20px/25px 'gilroyextrabold', arial, helvetica, sans-serif;
   }
 
   .middle__text {
-    width: 90%;
+    width: 92%;
+    padding-right: 15px;
     font: 18px/21px 'gilroylight', arial, helvetica, sans-serif;
   }
 
   .form__title {
-    padding: 44px 0 25px 0;
+    padding: 42px 0 25px 0;
     font: bold 20px/25px 'gilroyextrabold', arial, helvetica, sans-serif;
   }
 
@@ -342,12 +362,12 @@ body {
 
   .form__button {
     padding: 17px 90px;
-    margin-bottom: 44px;
+    margin-bottom: 42px;
     font: 10px/12px 'montserratblack', arial, helvetica, sans-serif;
   }
 
   .footer {
-    padding: 24px 42% 24px 0;
+    padding: 24px 46% 24px 0;
     font: 10px/12px 'robotoregular', arial, helvetica, sans-serif;
   }
 }
