@@ -22,21 +22,29 @@ body {
 .header__title {
   padding: 0 47% 0 0;
   margin: 0 0 33px 0;
-  font: bold 45px/55px 'gilroyextrabold', arial, helvetica, sans-serif;
+  font-size: calc(25px + (45 - 25) * ((100vw - 320px) / (1440 - 320)));
+  line-height: calc(31px + (55 - 31) * ((100vw - 320px) / (1440 - 320)));
+  font-family: 'gilroyextrabold';
+  font-style: bold;
   color: #fff;
 }
 
 .header__subtitle {
   padding: 0 69% 0 0;
   margin: 0 0 11px 0;
-  font: bold 30px/36px 'gilroyextrabold', arial, helvetica, sans-serif;
+  font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1440 - 320)));
+  line-height: calc(25px + (36 - 25) * ((100vw - 320px) / (1440 - 320)));
+  font-family: 'gilroyextrabold';
+  font-style: bold;
   color: #ffcc33;
 }
 
 .header__text {
   padding: 0 60% 0 0;
   margin: 0 0 32px 0;
-  font: 20px/23px 'gilroylight', arial, helvetica, sans-serif;
+  font-size: calc(15px + (20 - 15) * ((100vw - 320px) / (1440 - 320)));
+  line-height: calc(17px + (23 - 17) * ((100vw - 320px) / (1440 - 320)));
+  font-family: 'gilroylight';
   color: #fff;
 }
 
@@ -44,7 +52,9 @@ body {
   display: inline-block;
   padding: 15px 23px;
   text-decoration: none;
-  font: 20px/24px 'montserratblack', arial, helvetica, sans-serif;
+  font-size: calc(15px + (20 - 15) * ((100vw - 320px) / (1440 - 320)));
+  line-height: calc(18px + (24 - 18) * ((100vw - 320px) / (1440 - 320)));
+  font-family: 'montserratblack';
   color:#3030c1;
   background: #ffcc33;
   margin: 0 0 241px 0;
@@ -71,13 +81,14 @@ body {
 .plan__title, .middle__title {
   text-align: center;
   margin: 57px 0 30px 0;
-  font: bold 40px/49px 'gilroyextrabold', arial, helvetica, sans-serif;
+  font-size: calc(20px + (40 - 20) * ((100vw - 320px) / (1440 - 320)));
+  line-height: calc(25px + (49 - 25) * ((100vw - 320px) / (1440 - 320)));
+  font-family: 'gilroyextrabold';
+  font-style: bold;
 }
 
 .myplans {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   margin-bottom: 55px;
 }
 
@@ -89,6 +100,7 @@ body {
 
 .plan__item:last-child {
   margin-right: 0;
+  padding: 0 0 0 34px;
 }
 
 .img1, .img2, .img3 {
@@ -98,53 +110,75 @@ body {
   margin: 47px 0 25px 0;
 }
 
+.img1 {
+  padding-left: 5px;
+}
+
+.img2 {
+  padding-left: 10px;
+}
+
+.img3 {
+  padding-right: 25px;
+}
+
 .mobileimg1, .mobileimg2, .mobileimg3 {
   display: none;
 }
 
 .plan__title1, .plan__title2, .plan__title3  {
   text-align: center;
-
   margin: auto;
-  font: bold 30px/36px 'gilroyextrabold', arial, helvetica, sans-serif;
+  font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1440 - 320)));
+  line-height: calc(25px + (36 - 25) * ((100vw - 320px) / (1440 - 320)));
+  font-family: 'gilroyextrabold';
+  font-style: bold;
   color: #3030c1;
 }
 
 .plan__text1, .plan__text2, .plan__text3 {
   text-align: center;
   margin: auto;
-  font: bold 20px/24px 'gilroyextrabold', arial, helvetica, sans-serif;
+  font-size: calc(10px + (20 - 10) * ((100vw - 320px) / (1440 - 320)));
+  line-height: calc(12px + (25 - 12) * ((100vw - 320px) / (1440 - 320)));
+  font-family: 'gilroyextrabold';
+  font-style: bold;
   color: #3a3a3a;
 }
 
 .plan__title1 {
   width: 70%;
   margin-bottom: 25px;
+  padding-left: 12px;
 }
 
 .plan__title2 {
-  width: 80%;
+  width: 90%;
   margin-bottom: 14px;
+  padding-left: 12px;
 }
 
 .plan__title3 {
   width: 70%;
   margin-bottom: 25px;
+  padding-right: 23px;
 }
 
 .plan__text1 {
-  width: 61%;
+  width: 71%;
   margin-bottom: 63px;
 }
 
 .plan__text2 {
-  width: 60%;
+  width: 63%;
   margin-bottom: 52px;
+  padding-left: 8px;
 }
 
 .plan__text3 {
   width: 70%;
   margin-bottom: 63px;
+  padding-right: 30px;
 }
 
 .middle__text {
@@ -152,7 +186,9 @@ body {
   padding-left: 12px;
   margin: auto;
   width: 85%;
-  font: 30px/35px 'gilroylight', arial, helvetica, sans-serif;
+  font-size: calc(18px + (30 - 18) * ((100vw - 320px) / (1440 - 320)));
+  line-height: calc(21px + (35 - 21) * ((100vw - 320px) / (1440 - 320)));
+  font-family: 'gilroylight';
   margin-bottom: 55px;
 }
 
@@ -162,8 +198,11 @@ body {
 
 .form__title {
   text-align: center;
-  padding: 71px 0 50px 0;
-  font: bold 40px/49px 'gilroyextrabold', arial, helvetica, sans-serif;
+  padding: 73px 0 50px 0;
+  font-size: calc(20px + (40 - 20) * ((100vw - 320px) / (1440 - 320)));
+  line-height: calc(25px + (49 - 25) * ((100vw - 320px) / (1440 - 320)));
+  font-family: 'gilroyextrabold';
+  font-style: bold;
 }
 
 .form {
@@ -173,11 +212,13 @@ body {
 }
 
 .window__name {
-  padding: 28px 200px 28px 28px;
+  padding: 28px 200px 28px 26px;
   background: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
   border: none;
-  font: 20px/23px 'gilroylight', arial, helvetica, sans-serif;
+  font-size: calc(10px + (20 - 10) * ((100vw - 320px) / (1440 - 320)));
+  line-height: calc(12px + (23 - 12) * ((100vw - 320px) / (1440 - 320)));
+  font-family: 'gilroylight';
   color: #878787;
 }
 
@@ -186,7 +227,9 @@ body {
   background: #fff;
   margin-bottom: 74px;
   border: none;
-  font: 20px/23px 'gilroylight', arial, helvetica, sans-serif;
+  font-size: calc(10px + (20 - 10) * ((100vw - 320px) / (1440 - 320)));
+  line-height: calc(12px + (23 - 12) * ((100vw - 320px) / (1440 - 320)));
+  font-family: 'gilroylight';
   color: #878787;
 }
 
@@ -197,7 +240,9 @@ body {
   margin-bottom: 73px;
   text-decoration: none;
   border: none;
-  font: 20px/24px 'montserratblack', arial, helvetica, sans-serif;
+  font-size: calc(10px + (20 - 10) * ((100vw - 320px) / (1440 - 320)));
+  line-height: calc(12px + (23 - 12) * ((100vw - 320px) / (1440 - 320)));
+  font-family: 'montserratblack';
   color: #000;
 }
 
@@ -210,12 +255,22 @@ body {
   text-align: center;
   background: #3030c1;
   padding: 51px 70% 51px 0;
-  font: 15px/18px 'robotoregular', arial, helvetica, sans-serif;
+  font-size: calc(10px + (12 - 10) * ((100vw - 320px) / (1440 - 320)));
+  line-height: calc(12px + (15 - 12) * ((100vw - 320px) / (1440 - 320)));
+  font-family: 'robotoregular';
   color: #fff;
+}
+
+@media (max-width: 1170px) {
+  .header {
+    width: 92%;
+    background-size: 60%;
+  }
 }
 
 @media (max-width: 768px) {
   .header {
+    width: 82%;
     background: none;
   }
 
@@ -228,19 +283,16 @@ body {
   .header__title {
     padding: 0 2% 0 0;
     margin: 0 0 25px 0;
-    font: bold 25px/31px 'gilroyextrabold', arial, helvetica, sans-serif;
   }
 
   .header__subtitle {
     padding: 0 5% 0 0;
     margin: 0;
-    font: bold 20px/25px 'gilroyextrabold', arial, helvetica, sans-serif;
   }
 
   .header__text {
     padding: 0 6% 0 0;
     margin: 0 0 25px 0;
-    font: 15px/17px 'gilroylight', arial, helvetica, sans-serif;
   }
 
   .mobile__img {
@@ -260,14 +312,11 @@ body {
   }
 
   .plan__title {
-    text-align: center;
     margin: 55px 0 30px 0;
-    font: bold 20px/25px 'gilroyextrabold', arial, helvetica, sans-serif;
   }
 
   .myplans {
     display: inline-block;
-    align-items: top;
   }
 
   .plan__item {
@@ -290,12 +339,16 @@ body {
     padding-top: 42px;
   }
 
-  .plan__title1, .plan__title2, .plan__title3  {
-    font: bold 20px/25px 'gilroyextrabold', arial, helvetica, sans-serif;
+  .mobileimg1 {
+    padding-left: 5px;
   }
 
-  .plan__text1, .plan__text2, .plan__text3 {
-    font: bold 10px/12px 'gilroyextrabold', arial, helvetica, sans-serif;
+  .mobileimg2 {
+    padding-left: 10px;
+  }
+
+  .mobileimg3 {
+    padding-right: 30px;
   }
 
   .plan__title1 {
@@ -310,7 +363,8 @@ body {
 
   .plan__title3 {
     width: 80%;
-    margin-bottom: 15px;
+    padding-right: 35px;
+    margin-bottom: 12px;
   }
 
   .plan__text1 {
@@ -326,48 +380,42 @@ body {
   }
 
   .plan__text3 {
-    width: 50%;
+    width: 60%;
+    padding-right: 40px;
     padding-bottom: 42px;
     margin-bottom: 0px;
   }
 
   .middle__title {
-    text-align: center;
     margin: 0 0 30px 0;
-    font: bold 20px/25px 'gilroyextrabold', arial, helvetica, sans-serif;
   }
 
   .middle__text {
     width: 92%;
-    padding-right: 15px;
-    font: 18px/21px 'gilroylight', arial, helvetica, sans-serif;
+    padding-left: 5px;
+    padding-right: 10px;
   }
 
   .form__title {
-    padding: 42px 0 25px 0;
-    font: bold 20px/25px 'gilroyextrabold', arial, helvetica, sans-serif;
+    padding: 44px 0 25px 0;
   }
 
   .window__name {
     padding: 17px 169px 16px 17px;
     margin-bottom: 13px;
-    font: 10px/12px 'gilroylight', arial, helvetica, sans-serif;
   }
 
   .window__email {
     padding: 17px 92px 16px 17px;
-    margin-bottom: 26px;
-    font: 10px/12px 'gilroylight', arial, helvetica, sans-serif;
+    margin-bottom: 27px;
   }
 
   .form__button {
     padding: 17px 90px;
     margin-bottom: 42px;
-    font: 10px/12px 'montserratblack', arial, helvetica, sans-serif;
   }
 
   .footer {
     padding: 24px 46% 24px 0;
-    font: 10px/12px 'robotoregular', arial, helvetica, sans-serif;
   }
 }
